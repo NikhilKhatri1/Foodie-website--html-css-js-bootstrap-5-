@@ -120,3 +120,153 @@ p {
     color: var(--text-color);
     letter-spacing: 1px;
 }
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.187 rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.warapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--white-color);
+}
+
+/* 
+=================================
+      Header Design
+=================================
+ */
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* Change nav-bar styling on scroll */
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+    transition: all 0.4s ease-out 0s;
+}
+
+/* 
+=================================
+      top-banner Design
+=================================
+ */
+
+.top-banner {
+    width: 100%;
+    background-image: url('../images/bg/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+
+
+/* 
+=================================
+      counter-design
+=================================
+ */
+.counter-section {
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p {
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+
+/* 
+=================================
+      about section design
+=================================
+ */
