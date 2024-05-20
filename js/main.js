@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
             current = start,
             range = end - start,
             increment = end > start ? 1 : -1,
-            step = Math.abs(Math.floor(duration / range)),
+            // Adjusted the step to slow down the timer further
+            step = Math.abs(Math.floor(duration / range)) * 100, // Quadrupling the step to slow down the timer further
             timer = setInterval(() => {
                 current += increment;
                 obj.textContent = current;
-                if (current == end) {
+                if ((increment === 1 && current >= end) || (increment === -1 && current <= end)) {
                     clearInterval(timer);
                 }
             }, step);
